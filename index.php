@@ -254,7 +254,7 @@ $APPLICATION->SetTitle('Главная');
 		"COMPONENT_TEMPLATE" => ".default"
 	),
 	false
-); ?><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+); ?>
 
 <!-- Наши работы -->
 
@@ -268,6 +268,7 @@ $APPLICATION->SetTitle('Главная');
 			</div>
 		</div>
 		<div class="row">
+
 			<div class="col-lg-12">
 				<div class="portfolio-menu brand-filter text-center mb-70">
 					<div class="filter" data-filter="all">Все</div>
@@ -277,7 +278,8 @@ $APPLICATION->SetTitle('Главная');
 					<div class="filter" data-filter=".corporative_site">Корпоративные порталы</div>
 				</div>
 			</div>
-			<div id="Container">
+
+			<div id="container">
 				<div class="col-md-4 col-sm-6 col-xs-12 mb-30 mix landing promo">
 					<div class="portfolio-wrapper portfolio-title">
 						<div class="portfolio-img">
@@ -405,53 +407,70 @@ $APPLICATION->SetTitle('Главная');
 </section>
 
 
-<!-- Отзывы клиентов -->
-<section class="testimonial-area bg-color pad-90">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="testimonial-active dots-style">
-					<div class="single-testimonial black-text text-center">
-						<div class="testimonial-title">
-							<span class="icon-quote"></span>
-							<h3 class="black-text">Сроки не проблема!</h3>
-						</div>
-						<p><span>"</span>Спасут любой проект с самыми горящими сроками! Ребята действительно
-							профессионалы своего дела.<span>"</span>
-						</p>
-						<div class="testimonial-author text-uppercase">
-							<span>- Андрей Александров, Best Shop.</span>
-						</div>
-					</div>
-					<div class="single-testimonial black-text text-center">
-						<div class="testimonial-title">
-							<span class="icon-quote"></span>
-							<h3 class="black-text">Это взрыв!</h3>
-						</div>
-						<p><span>"</span>Я рад, что мы получили такой классный продукт на выходе!
-							Думаю, что совместными усилиями мы реализуем ещё не один
-							проект.<span>"</span></p>
-						<div class="testimonial-author text-uppercase">
-							<span>- Виталий Нохрин, NA'MAN Rec.</span>
-						</div>
-					</div>
-					<div class="single-testimonial black-text text-center">
-						<div class="testimonial-title">
-							<span class="icon-quote"></span>
-							<h3 class="black-text">Большая удача?</h3>
-						</div>
-						<p><span>"</span>Мы нашли WeCoders после десятка неудачных проектов с другими web студиями.
-							И…
-							Это большая удача, <span>"</span></p>
-						<div class="testimonial-author text-uppercase">
-							<span>- Ирина Граф, Cars & Cars company</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<?$APPLICATION->IncludeComponent("bitrix:news.list", "reviews", Array(
+	"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+		"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+		"AJAX_MODE" => "N",	// Включить режим AJAX
+		"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+		"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+		"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+		"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+		"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+		"CACHE_GROUPS" => "Y",	// Учитывать права доступа
+		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+		"CACHE_TYPE" => "A",	// Тип кеширования
+		"CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+		"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+		"DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
+		"DISPLAY_DATE" => "N",	// Выводить дату элемента
+		"DISPLAY_NAME" => "N",	// Выводить название элемента
+		"DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
+		"DISPLAY_PREVIEW_TEXT" => "N",	// Выводить текст анонса
+		"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+		"FIELD_CODE" => array(	// Поля
+			0 => "ID",
+			1 => "NAME",
+			2 => "PREVIEW_TEXT",
+			3 => "DETAIL_TEXT",
+			4 => "",
+		),
+		"FILTER_NAME" => "",	// Фильтр
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
+		"IBLOCK_ID" => getIblockIdByCodeD7("reviews"),	// Код информационного блока
+		"IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+		"INCLUDE_SUBSECTIONS" => "N",	// Показывать элементы подразделов раздела
+		"MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+		"NEWS_COUNT" => "4",	// Количество новостей на странице
+		"PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
+		"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+		"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+		"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+		"PAGER_TEMPLATE" => "",	// Шаблон постраничной навигации
+		"PAGER_TITLE" => "Новости",	// Название категорий
+		"PARENT_SECTION" => "",	// ID раздела
+		"PARENT_SECTION_CODE" => "",	// Код раздела
+		"PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
+		"PROPERTY_CODE" => array(	// Свойства
+			0 => "",
+			1 => "",
+		),
+		"SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
+		"SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
+		"SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
+		"SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
+		"SET_STATUS_404" => "N",	// Устанавливать статус 404
+		"SET_TITLE" => "Y",	// Устанавливать заголовок страницы
+		"SHOW_404" => "N",	// Показ специальной страницы
+		"SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
+		"SORT_BY2" => "",	// Поле для второй сортировки новостей
+		"SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
+		"SORT_ORDER2" => "",	// Направление для второй сортировки новостей
+		"STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
+	),
+	false
+);?>
 
 <?
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php');

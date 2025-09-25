@@ -214,33 +214,31 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 				</div>
 			</div>
 		</div>
+	</header>
 
-
-		<? if (!($APPLICATION->GetCurDir() === '/')): ?>
-			<!-- Хлебные крошки (навигация) -->
-			<div class="breadcrumb-area brand-bg ptb-100">
-				<div class="container width-100">
-					<div class="row z-index">
-						<div class="col-md-7 col-sm-6">
-							<div class="breadcrumb-title">
-								<h2 class="white-text"><? $APPLICATION->ShowTitle(false) ?></h2>
-							</div>
+	<? if (!($APPLICATION->GetCurDir() === '/')): ?>
+		<!-- Хлебные крошки (навигация) -->
+		<div class="breadcrumb-area brand-bg ptb-100">
+			<div class="container width-100">
+				<div class="row z-index">
+					<div class="col-md-7 col-sm-6">
+						<div class="breadcrumb-title">
+							<h2 class="white-text"><? $APPLICATION->ShowTitle(false) ?></h2>
 						</div>
-						<div class="col-md-5 col-sm-6">
-							<div class="breadcrumb-menu">
-								<ol class="breadcrumb text-right">
-									<li>
-										<a href="index.html">Главная</a>
-									</li>
-									<li>
-										<a href="#">О нас</a>
-									</li>
-								</ol>
-							</div>
+					</div>
+					<div class="col-md-5 col-sm-6">
+						<div class="breadcrumb-menu">
+							<ol class="breadcrumb text-right">
+								<li>
+									<a href="index.html">Главная</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+							</ol>
 						</div>
 					</div>
 				</div>
 			</div>
-
-		<? endif ?>
-	</header>
+		</div>
+	<? endif ?>
