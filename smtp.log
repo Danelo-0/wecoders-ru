@@ -1,0 +1,232 @@
+Connection: opening to smtp.yandex.ru:465, timeout=30, options=array()Connection: openedConnection: opening to smtp.yandex.ru:465, timeout=30, options=array()Connection: openedConnection: opening to smtp.yandex.ru:25, timeout=30, options=array()Connection: openedSMTP INBOUND: "220 mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net Ok 1759244365-PxfvXlFL4W20"SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net Ok 1759244365-PxfvXlFL4W20
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+CLIENT -> SERVER: STARTTLS
+SMTP INBOUND: "220 Go ahead"SERVER -> CLIENT: 220 Go ahead
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-67.sas.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+Auth method requested: UNSPECIFIEDAuth methods available on the server: LOGIN,PLAIN,XOAUTH2Requested auth method not available: Auth method selected: LOGINCLIENT -> SERVER: AUTH LOGIN
+SMTP INBOUND: "334 VXNlcm5hbWU6"SERVER -> CLIENT: 334 VXNlcm5hbWU6
+CLIENT -> SERVER: Q0JFUlgtQUxGQQ==
+SMTP INBOUND: "334 UGFzc3dvcmQ6"SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+CLIENT -> SERVER: bHN2Z3hha2FpZGxrZndnYg==
+SMTP INBOUND: "235 2.7.0 Authentication successful. 1759244366-PxfvXlFL4W20"SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1759244366-PxfvXlFL4W20
+CLIENT -> SERVER: QUIT
+SMTP INBOUND: "221 2.0.0 Closing connecton"SERVER -> CLIENT: 221 2.0.0 Closing connecton
+Connection: closedConnection: opening to ssl://smtp.yandex.ru:465, timeout=30, options=array()Connection: openedSMTP INBOUND: "220 mail-nwsmtp-smtp-production-main-59.klg.yp-c.yandex.net Ok 1759244646-64glcDELu8c0"SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-59.klg.yp-c.yandex.net Ok 1759244646-64glcDELu8c0
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-59.klg.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-59.klg.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+Auth method requested: UNSPECIFIEDAuth methods available on the server: LOGIN,PLAIN,XOAUTH2Requested auth method not available: Auth method selected: LOGINCLIENT -> SERVER: AUTH LOGIN
+SMTP INBOUND: "334 VXNlcm5hbWU6"SERVER -> CLIENT: 334 VXNlcm5hbWU6
+CLIENT -> SERVER: Q0JFUlgtQUxGQQ==
+SMTP INBOUND: "334 UGFzc3dvcmQ6"SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+CLIENT -> SERVER: bHN2Z3hha2FpZGxrZndnYg==
+SMTP INBOUND: "235 2.7.0 Authentication successful. 1759244647-64glcDELu8c0"SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1759244647-64glcDELu8c0
+CLIENT -> SERVER: QUIT
+SMTP INBOUND: "221 2.0.0 Closing connecton"SERVER -> CLIENT: 221 2.0.0 Closing connecton
+Connection: closedConnection: opening to ssl://smtp.yandex.ru:465, timeout=30, options=array()Connection: openedSMTP INBOUND: "220 mail-nwsmtp-smtp-production-main-95.iva.yp-c.yandex.net Ok 1759244811-p6g4YgAM3Cg0"SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-95.iva.yp-c.yandex.net Ok 1759244811-p6g4YgAM3Cg0
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-95.iva.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-95.iva.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+Auth method requested: UNSPECIFIEDAuth methods available on the server: LOGIN,PLAIN,XOAUTH2Requested auth method not available: Auth method selected: LOGINCLIENT -> SERVER: AUTH LOGIN
+SMTP INBOUND: "334 VXNlcm5hbWU6"SERVER -> CLIENT: 334 VXNlcm5hbWU6
+CLIENT -> SERVER: Q0JFUlgtQUxGQQ==
+SMTP INBOUND: "334 UGFzc3dvcmQ6"SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+CLIENT -> SERVER: bHN2Z3hha2FpZGxrZndnYg==
+SMTP INBOUND: "235 2.7.0 Authentication successful. 1759244812-p6g4YgAM3Cg0"SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1759244812-p6g4YgAM3Cg0
+CLIENT -> SERVER: MAIL FROM:<cberx-alfa@yandex.ru>
+SMTP INBOUND: "250 2.1.0 <cberx-alfa@yandex.ru> ok 1759244812-p6g4YgAM3Cg0-WsGhdnoG"SERVER -> CLIENT: 250 2.1.0 <cberx-alfa@yandex.ru> ok 1759244812-p6g4YgAM3Cg0-WsGhdnoG
+CLIENT -> SERVER: RCPT TO:<CBERX-ALFA@yandex.ru>
+SMTP INBOUND: "250 2.1.5 <CBERX-ALFA@yandex.ru> recipient ok 1759244812-p6g4YgAM3Cg0-WsGhdnoG"SERVER -> CLIENT: 250 2.1.5 <CBERX-ALFA@yandex.ru> recipient ok 1759244812-p6g4YgAM3Cg0-WsGhdnoG
+CLIENT -> SERVER: DATA
+SMTP INBOUND: "354 Start mail input, end with <CRLF>.<CRLF>"SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+CLIENT -> SERVER: From: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: Reply-To: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: X-EVENT_NAME: FEEDBACK_FORM
+CLIENT -> SERVER: X-Priority: 3 (Normal)
+CLIENT -> SERVER: Date: Tue, 30 Sep 2025 20:06:50 +0500
+CLIENT -> SERVER: MIME-Version: 1.0
+CLIENT -> SERVER: X-MID: 9.7 (30.09.2025 2024:06:50)
+CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+CLIENT -> SERVER: Subject: =?UTF-8?B?d2Vjb2RlcnMucnU6INCh0L7QvtCx0YnQtdC90LjQtSDQuNC3INGE0L7RgNC80Ysg0L7QsdGA0LDRgtC90L7QuSDRgdCy0Y/Qt9C4?=
+CLIENT -> SERVER: To: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Информационное сообщение сайта wecoders.ru
+CLIENT -> SERVER: ------------------------------------------
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Вам было отправлено сообщение через форму обратной связи
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Автор: Даниил Матвеев
+CLIENT -> SERVER: E-mail автора: daniil.matveev.01@live.ru
+CLIENT -> SERVER: Телефон: 111111111111111111111111111
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Текст сообщения:
+CLIENT -> SERVER: dfg
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Сообщение сгенерировано автоматически.
+CLIENT -> SERVER: 
+CLIENT -> SERVER: 
+CLIENT -> SERVER: 
+CLIENT -> SERVER: .
+SMTP INBOUND: "250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-95.iva.yp-c.yandex.net 1759244813-p6g4YgAM3Cg0-WsGhdnoG"SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-95.iva.yp-c.yandex.net 1759244813-p6g4YgAM3Cg0-WsGhdnoG
+CLIENT -> SERVER: QUIT
+SMTP INBOUND: "221 2.0.0 Closing connecton"SERVER -> CLIENT: 221 2.0.0 Closing connecton
+Connection: closedConnection: opening to smtp.yandex.ru:25, timeout=30, options=array()Connection: openedSMTP INBOUND: "220 mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net Ok 1759244912-W8gXo13LuqM0"SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net Ok 1759244912-W8gXo13LuqM0
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+CLIENT -> SERVER: STARTTLS
+SMTP INBOUND: "220 Go ahead"SERVER -> CLIENT: 220 Go ahead
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+Auth method requested: UNSPECIFIEDAuth methods available on the server: LOGIN,PLAIN,XOAUTH2Requested auth method not available: Auth method selected: LOGINCLIENT -> SERVER: AUTH LOGIN
+SMTP INBOUND: "334 VXNlcm5hbWU6"SERVER -> CLIENT: 334 VXNlcm5hbWU6
+CLIENT -> SERVER: Q0JFUlgtQUxGQQ==
+SMTP INBOUND: "334 UGFzc3dvcmQ6"SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+CLIENT -> SERVER: bHN2Z3hha2FpZGxrZndnYg==
+SMTP INBOUND: "235 2.7.0 Authentication successful. 1759244913-W8gXo13LuqM0"SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1759244913-W8gXo13LuqM0
+CLIENT -> SERVER: MAIL FROM:<cberx-alfa@yandex.ru>
+SMTP INBOUND: "250 2.1.0 <cberx-alfa@yandex.ru> ok 1759244913-W8gXo13LuqM0-tHSTt3Cz"SERVER -> CLIENT: 250 2.1.0 <cberx-alfa@yandex.ru> ok 1759244913-W8gXo13LuqM0-tHSTt3Cz
+CLIENT -> SERVER: RCPT TO:<CBERX-ALFA@yandex.ru>
+SMTP INBOUND: "250 2.1.5 <CBERX-ALFA@yandex.ru> recipient ok 1759244914-W8gXo13LuqM0-tHSTt3Cz"SERVER -> CLIENT: 250 2.1.5 <CBERX-ALFA@yandex.ru> recipient ok 1759244914-W8gXo13LuqM0-tHSTt3Cz
+CLIENT -> SERVER: DATA
+SMTP INBOUND: "354 Start mail input, end with <CRLF>.<CRLF>"SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+CLIENT -> SERVER: From: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: Reply-To: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: X-EVENT_NAME: FEEDBACK_FORM
+CLIENT -> SERVER: X-Priority: 3 (Normal)
+CLIENT -> SERVER: Date: Tue, 30 Sep 2025 20:08:31 +0500
+CLIENT -> SERVER: MIME-Version: 1.0
+CLIENT -> SERVER: X-MID: 10.7 (30.09.2025 2024:08:31)
+CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+CLIENT -> SERVER: Subject: =?UTF-8?B?d2Vjb2RlcnMucnU6INCh0L7QvtCx0YnQtdC90LjQtSDQuNC3INGE0L7RgNC80Ysg0L7QsdGA0LDRgtC90L7QuSDRgdCy0Y/Qt9C4?=
+CLIENT -> SERVER: To: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Информационное сообщение сайта wecoders.ru
+CLIENT -> SERVER: ------------------------------------------
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Вам было отправлено сообщение через форму обратной связи
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Автор: МАапв
+CLIENT -> SERVER: E-mail автора: daniil.matveev.01@live.ru
+CLIENT -> SERVER: Телефон: 111111111111111111111111111
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Текст сообщения:
+CLIENT -> SERVER: апвапввапвап
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Сообщение сгенерировано автоматически.
+CLIENT -> SERVER: 
+CLIENT -> SERVER: 
+CLIENT -> SERVER: 
+CLIENT -> SERVER: .
+SMTP INBOUND: "250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net 1759244914-W8gXo13LuqM0-tHSTt3Cz"SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-70.sas.yp-c.yandex.net 1759244914-W8gXo13LuqM0-tHSTt3Cz
+CLIENT -> SERVER: QUIT
+SMTP INBOUND: "221 2.0.0 Closing connecton"SERVER -> CLIENT: 221 2.0.0 Closing connecton
+Connection: closedConnection: opening to smtp.yandex.ru:25, timeout=30, options=array()Connection: openedSMTP INBOUND: "220 mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net Ok 1759245625-PKglTqFL2Ko0"SERVER -> CLIENT: 220 mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net Ok 1759245625-PKglTqFL2Ko0
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+CLIENT -> SERVER: STARTTLS
+SMTP INBOUND: "220 Go ahead"SERVER -> CLIENT: 220 Go ahead
+CLIENT -> SERVER: EHLO wecoders.ru
+SMTP INBOUND: "250-mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net"SMTP INBOUND: "250-8BITMIME"SMTP INBOUND: "250-PIPELINING"SMTP INBOUND: "250-SIZE 53477376"SMTP INBOUND: "250-STARTTLS"SMTP INBOUND: "250-AUTH LOGIN PLAIN XOAUTH2"SMTP INBOUND: "250-DSN"SMTP INBOUND: "250 ENHANCEDSTATUSCODES"SERVER -> CLIENT: 250-mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 53477376
+250-STARTTLS
+250-AUTH LOGIN PLAIN XOAUTH2
+250-DSN
+250 ENHANCEDSTATUSCODES
+Auth method requested: UNSPECIFIEDAuth methods available on the server: LOGIN,PLAIN,XOAUTH2Requested auth method not available: Auth method selected: LOGINCLIENT -> SERVER: AUTH LOGIN
+SMTP INBOUND: "334 VXNlcm5hbWU6"SERVER -> CLIENT: 334 VXNlcm5hbWU6
+CLIENT -> SERVER: Q0JFUlgtQUxGQQ==
+SMTP INBOUND: "334 UGFzc3dvcmQ6"SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+CLIENT -> SERVER: bHN2Z3hha2FpZGxrZndnYg==
+SMTP INBOUND: "235 2.7.0 Authentication successful. 1759245626-PKglTqFL2Ko0"SERVER -> CLIENT: 235 2.7.0 Authentication successful. 1759245626-PKglTqFL2Ko0
+CLIENT -> SERVER: MAIL FROM:<cberx-alfa@yandex.ru>
+SMTP INBOUND: "250 2.1.0 <cberx-alfa@yandex.ru> ok 1759245626-PKglTqFL2Ko0-h2vtRBgq"SERVER -> CLIENT: 250 2.1.0 <cberx-alfa@yandex.ru> ok 1759245626-PKglTqFL2Ko0-h2vtRBgq
+CLIENT -> SERVER: RCPT TO:<CBERX-ALFA@yandex.ru>
+SMTP INBOUND: "250 2.1.5 <CBERX-ALFA@yandex.ru> recipient ok 1759245626-PKglTqFL2Ko0-h2vtRBgq"SERVER -> CLIENT: 250 2.1.5 <CBERX-ALFA@yandex.ru> recipient ok 1759245626-PKglTqFL2Ko0-h2vtRBgq
+CLIENT -> SERVER: DATA
+SMTP INBOUND: "354 Start mail input, end with <CRLF>.<CRLF>"SERVER -> CLIENT: 354 Start mail input, end with <CRLF>.<CRLF>
+CLIENT -> SERVER: From: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: Reply-To: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: X-EVENT_NAME: FEEDBACK_FORM
+CLIENT -> SERVER: X-Priority: 3 (Normal)
+CLIENT -> SERVER: Date: Tue, 30 Sep 2025 20:20:24 +0500
+CLIENT -> SERVER: MIME-Version: 1.0
+CLIENT -> SERVER: X-MID: 11.7 (30.09.2025 2024:20:24)
+CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+CLIENT -> SERVER: Subject: =?UTF-8?B?d2Vjb2RlcnMucnU6INCh0L7QvtCx0YnQtdC90LjQtSDQuNC3INGE0L7RgNC80Ysg0L7QsdGA0LDRgtC90L7QuSDRgdCy0Y/Qt9C4?=
+CLIENT -> SERVER: To: CBERX-ALFA@yandex.ru
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Информационное сообщение сайта wecoders.ru
+CLIENT -> SERVER: ------------------------------------------
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Вам было отправлено сообщение через форму обратной связи
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Автор: Даниил Матвеев
+CLIENT -> SERVER: E-mail автора: daniil.matveev.01@live.ru
+CLIENT -> SERVER: Телефон: fdsfds
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Текст сообщения:
+CLIENT -> SERVER: fdsdfs
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Сообщение сгенерировано автоматически.
+CLIENT -> SERVER: 
+CLIENT -> SERVER: 
+CLIENT -> SERVER: 
+CLIENT -> SERVER: .
+SMTP INBOUND: "250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net 1759245627-PKglTqFL2Ko0-h2vtRBgq"SERVER -> CLIENT: 250 2.0.0 Ok: queued on mail-nwsmtp-smtp-production-main-98.sas.yp-c.yandex.net 1759245627-PKglTqFL2Ko0-h2vtRBgq
+CLIENT -> SERVER: QUIT
+SMTP INBOUND: "221 2.0.0 Closing connecton"SERVER -> CLIENT: 221 2.0.0 Closing connecton
+Connection: closed

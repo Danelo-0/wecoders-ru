@@ -4,6 +4,7 @@ $APPLICATION->SetPageProperty("TITLE", "О нас | We Coders");
 $APPLICATION->SetPageProperty("keywords", "О нас, о компании, we coders, сайты");
 $APPLICATION->SetPageProperty("description", "О нашей компании");
 $APPLICATION->SetTitle("О нас");
+$APPLICATION->AddChainItem($APPLICATION->GetTitle(), $APPLICATION->GetCurPage());
 ?>
 
 <!-- О нас -->

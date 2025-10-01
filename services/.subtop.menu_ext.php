@@ -1,10 +1,7 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("test");
-?><br>
- <br>
- <br>
- <?$APPLICATION->IncludeComponent(
+global $APPLICATION;
+
+$section = $APPLICATION->IncludeComponent(
 	"bitrix:menu.sections",
 	"",
 	Array(
@@ -20,4 +17,12 @@ $APPLICATION->SetTitle("test");
 		"SECTION_URL" => "",
 		"SEF_BASE_URL" => "/services/"
 	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);
+
+$aMenuLinks = array_merge($aMenuLinks, $section);
+
+// // echo '<pre>';
+// // print_r($aMenuLinks);
+// // echo '</pre>';
+
+?>

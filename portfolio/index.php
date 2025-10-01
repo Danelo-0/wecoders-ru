@@ -4,12 +4,13 @@ $APPLICATION->SetPageProperty("TITLE", "Портфолио | We Coders");
 $APPLICATION->SetPageProperty("keywords", "Портфолио, о портфолио, we coders, сайты");
 $APPLICATION->SetPageProperty("description", "Портфолио нашей компании");
 $APPLICATION->SetTitle("Портфолио");
+$APPLICATION->AddChainItem($APPLICATION->GetTitle(), "/portfolio/");
 ?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news",
 	"portfolio",
 	array(
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
@@ -85,7 +86,7 @@ $APPLICATION->SetTitle("Портфолио");
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "Y",
 		"SET_TITLE" => "Y",
-		"SHOW_404" => "N",
+		"SHOW_404" => "Y",
 		"SORT_BY1" => "SORT",
 		"SORT_BY2" => "",
 		"SORT_ORDER1" => "ASC",

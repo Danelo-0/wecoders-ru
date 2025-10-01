@@ -10,7 +10,19 @@ $APPLICATION->SetTitle("404 Not Found");
 
 ?>
 
-<h1>Ошибка 404</h1>
-<p>К сожалению, страница не найдена. Вернитесь на <a href="/">главную</a>.</p>
+<!-- Контент (ошибка) -->
+<div class="error-area ptb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-content text-center">
+                    <h1>404</h1>
+                    <p>Страница, которую вы ищете, не найдена!</p>
+                    <a href="/" class="btn">На главную</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
