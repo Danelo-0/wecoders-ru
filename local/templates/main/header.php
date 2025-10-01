@@ -15,6 +15,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="icon" type="image/png" href="<?= SITE_TEMPLATE_PATH ?>/img/favicon.png">
+	<!-- <script src="https://api-maps.yandex.ru/v3/?apikey=7648c946-9105-49a5-af58-d2bda057d210&lang=ru_RU"></script> -->
 
 	<?
 
@@ -36,6 +37,9 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	$asset->addCss(SITE_TEMPLATE_PATH . '/css/responsive.css');
 
 	// JS
+	$asset->addJs("https://api-maps.yandex.ru/v3/?apikey=7648c946-9105-49a5-af58-d2bda057d210&lang=ru_RU");
+	$asset->addJs(SITE_TEMPLATE_PATH . "/js/map.js");
+
 	$asset->addJs(SITE_TEMPLATE_PATH . "/js/vendor/modernizr-2.8.3.min.js");
 	$asset->addJs(SITE_TEMPLATE_PATH . "/js/vendor/jquery-1.12.0.min.js");
 	$asset->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap.min.js");

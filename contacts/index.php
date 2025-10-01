@@ -50,24 +50,24 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle(), $APPLICATION->GetCurPage())
          </div>
 
          <? $APPLICATION->IncludeComponent(
-	"wecoder:main.feedback", 
-	"contactsPageForm", 
-	array(
-		"EMAIL_TO" => "CBERX-ALFA@yandex.ru",
-		"EVENT_MESSAGE_ID" => array(
-			0 => "7",
-		),
-		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-		"REQUIRED_FIELDS" => array(
-			0 => "NAME",
-			1 => "EMAIL",
-		),
-		"USE_CAPTCHA" => "N",
-		"COMPONENT_TEMPLATE" => "contactsPageForm",
-		"AJAX_MODE" => "Y"
-	),
-	false
-); ?>
+            "wecoder:main.feedback",
+            "contactsPageForm",
+            array(
+               "EMAIL_TO" => "CBERX-ALFA@yandex.ru",
+               "EVENT_MESSAGE_ID" => array(
+                  0 => "7",
+               ),
+               "OK_TEXT" => "Спасибо, ваше сообщение принято.",
+               "REQUIRED_FIELDS" => array(
+                  0 => "NAME",
+                  1 => "EMAIL",
+               ),
+               "USE_CAPTCHA" => "N",
+               "COMPONENT_TEMPLATE" => "contactsPageForm",
+               "AJAX_MODE" => "Y"
+            ),
+            false
+         ); ?>
 
       </div>
    </div>
@@ -78,11 +78,12 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle(), $APPLICATION->GetCurPage())
    <div class="container">
       <div class="row">
          <div class="col-md-12">
-            <div id="map" class="mtb-90"></div>
+            <div id="map" class="mtb-90" style="width: 100%; height: 400px"></div>
          </div>
       </div>
    </div>
 </div>
+
 
 <?
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php');

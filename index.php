@@ -5,11 +5,11 @@ $APPLICATION->SetTitle('Главная');
 ?>
 
 <? $APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"main_slider",
+	"bitrix:news.list", 
+	"main_slider", 
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
@@ -24,7 +24,7 @@ $APPLICATION->SetTitle('Главная');
 		"DISPLAY_BOTTOM_PAGER" => "N",
 		"DISPLAY_DATE" => "N",
 		"DISPLAY_NAME" => "N",
-		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PICTURE" => "N",
 		"DISPLAY_PREVIEW_TEXT" => "N",
 		"DISPLAY_TOP_PAGER" => "N",
 		"FIELD_CODE" => array(
@@ -40,7 +40,7 @@ $APPLICATION->SetTitle('Главная');
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => getIblockIdByCodeD7("main_slider"),
 		"IBLOCK_TYPE" => "content",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "N",
 		"MESSAGE_404" => "",
 		"NEWS_COUNT" => "20",
@@ -55,8 +55,9 @@ $APPLICATION->SetTitle('Главная');
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "LINK",
-			1 => "",
+			0 => "",
+			1 => "LINK",
+			2 => "",
 		),
 		"SET_BROWSER_TITLE" => "N",
 		"SET_LAST_MODIFIED" => "N",
