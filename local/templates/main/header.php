@@ -1,6 +1,12 @@
 <?
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
+
+if(!defined('SITE_TEMPLATE_PATH')) {
+    define('SITE_TEMPLATE_PATH', '');
+}
+
+CJSCore::Init(["jquery"]);
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +24,6 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<!-- <script src="https://api-maps.yandex.ru/v3/?apikey=7648c946-9105-49a5-af58-d2bda057d210&lang=ru_RU"></script> -->
 
 	<?
-
 	use Bitrix\Main\Page\Asset;
 
 	$asset = Asset::getInstance();
@@ -33,7 +38,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	$asset->addCss(SITE_TEMPLATE_PATH . '/css/shortcode/shortcodes.css');
 	$asset->addCss(SITE_TEMPLATE_PATH . '/css/meanmenu.min.css');
 	$asset->addCss(SITE_TEMPLATE_PATH . '/css/font-awesome.min.css');
-	$asset->addCss(SITE_TEMPLATE_PATH . '/style.css');
+	$asset->addCss(SITE_TEMPLATE_PATH . '/styles.css');
 	$asset->addCss(SITE_TEMPLATE_PATH . '/css/responsive.css');
 
 	// JS
@@ -96,6 +101,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 							</span>
 						</div>
 					</div>
+					
 					<div class="col-md-6 col-sm-6">
 						<div class="social-icon-header text-right">
 							<a href="#"><i class="fa fa-facebook"></i></a>
