@@ -54,19 +54,6 @@ $this->setFrameMode(true);
 	<? endif; ?>
 
 
-	<!-- Пагинация (постраничная навигация) -->
-	<ul class="pagination mt-50">
-		<li>
-			<a href="#"><i class="fa fa-angle-left"></i></a>
-		</li>
-		<li><span class="current">1</span></li>
-		<li>
-			<a href="#">2</a>
-		</li>
-		<li>
-			<a href="#"><i class="fa fa-angle-right"></i></a>
-		</li>
-	</ul>
 </div>
 
 <? else: ?>

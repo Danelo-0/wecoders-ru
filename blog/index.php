@@ -6,8 +6,8 @@ $APPLICATION->SetPageProperty("description", "блог нашей компани
 $APPLICATION->SetTitle("Блог");
 $APPLICATION->AddChainItem($APPLICATION->GetTitle(), "/blog/");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news",
-	"blogList",
+	"bitrix:news", 
+	"blogList", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -20,7 +20,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle(), "/blog/");
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "N",
 		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CHECK_DATES" => "Y",
 		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "N",
@@ -86,7 +86,7 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle(), "/blog/");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TEMPLATE" => "blog_pagenavigation",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/blog/",
@@ -95,9 +95,9 @@ $APPLICATION->AddChainItem($APPLICATION->GetTitle(), "/blog/");
 		"SET_STATUS_404" => "Y",
 		"SET_TITLE" => "Y",
 		"SHOW_404" => "N",
-		"SORT_BY1" => "SORT",
+		"SORT_BY1" => "TIMESTAMP_X",
 		"SORT_BY2" => "",
-		"SORT_ORDER1" => "ASC",
+		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "",
 		"STRICT_SECTION_CHECK" => "N",
 		"USE_CATEGORIES" => "N",

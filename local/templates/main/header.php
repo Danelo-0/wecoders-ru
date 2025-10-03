@@ -6,7 +6,7 @@ if(!defined('SITE_TEMPLATE_PATH')) {
     define('SITE_TEMPLATE_PATH', '');
 }
 
-CJSCore::Init(["jquery"]);
+CJSCore::Init(["jquery2"]);
 ?>
 
 <!DOCTYPE html>
@@ -101,7 +101,7 @@ CJSCore::Init(["jquery"]);
 							</span>
 						</div>
 					</div>
-					
+
 					<div class="col-md-6 col-sm-6">
 						<div class="social-icon-header text-right">
 							<a href="#"><i class="fa fa-facebook"></i></a>
